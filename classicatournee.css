@@ -443,6 +443,12 @@ section .box div span:nth-child(3) {
 #radio4:checked ~ .first {
   margin-left: -60%;
 }
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+#radio6:checked ~ .first {
+  margin-left: -100%;
+}
 
 /* css for automatic navigation */
 
@@ -476,6 +482,23 @@ section .box div span:nth-child(3) {
 }
 #radio4:checked ~ .navigation-auto .auto-btn4 {
   background: #40D3DC;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+  background: #40D3DC;
+}
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+  background: #40D3DC;
+}
+
+.pdf button {
+  padding: 15px;
+  background-color: #40D3DC;
+  transition: 1s;
+}
+
+.pdf button:hover {
+  background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+  transform: scale(1.3);
 }
 
 @media (max-width: 786px) {

@@ -114,12 +114,12 @@
           </div>
               <!-- manual navigation start -->
               <div class="navigation-manual">
-                  <label for="radio1" class="manual-btn"></label>
-                  <label for="radio2" class="manual-btn"></label>
-                  <label for="radio3" class="manual-btn"></label>
-                  <label for="radio4" class="manual-btn"></label>
-                  <label for="radio5" class="manual-btn"></label>
-                  <label for="radio6" class="manual-btn"></label>
+                  <label for="radio1" class="manual-btn" onclick="counterClick(1)"></label>
+                  <label for="radio2" class="manual-btn" onclick="counterClick(2)"></label>
+                  <label for="radio3" class="manual-btn" onclick="counterClick(3)"></label>
+                  <label for="radio4" class="manual-btn" onclick="counterClick(4)"></label>
+                  <label for="radio5" class="manual-btn" onclick="counterClick(5)"></label>
+                  <label for="radio6" class="manual-btn" onclick="counterClick(6)"></label>
               </div>
               <!-- manual navigation end -->
         </div>
@@ -255,13 +255,18 @@
   }
 
       var counter = 1;
-    setInterval(function(){
+  
+    function counterClick(radioNum){
+      counter = radioNum;
+    };
+  
+      setInterval(function(){
         document.getElementById('radio'+ counter).checked = true;
         counter++;
-        if(counter>4){
+        if(counter>6){
             counter=1;
         }
-    },5000);
+    },3000);
   </script>
 
   </body>
