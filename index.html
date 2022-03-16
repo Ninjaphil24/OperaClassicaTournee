@@ -7,6 +7,8 @@
     <link rel="shortcut icon" type="image/png" href="images/logo.jpg">
     <link rel="stylesheet" href="classicatournee.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper.min.css">
   </head>
   <body>
   <ul class="d-flex nav" id="navbar">
@@ -67,71 +69,35 @@
            </ul>
       </p>
       <br><br>
-      <h5>Vergangene Produktionen</h5> <br>
+      <!-- <h5>Vergangene Produktionen</h5> <br>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/1bYQoLWHKHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <br><br>
+      <br><br> -->
       <h5>Kostüme und Buhnenbilder:</h5> <br>
-      
-      <!-- image slider start -->
-        <div class="slider">
-          <div class="slides">
-              <!-- radiobuttons start -->
-              <input type="radio" name="radio-btn" id="radio1">
-              <input type="radio" name="radio-btn" id="radio2">
-              <input type="radio" name="radio-btn" id="radio3">
-              <input type="radio" name="radio-btn" id="radio4">            
-              <input type="radio" name="radio-btn" id="radio5">            
-              <input type="radio" name="radio-btn" id="radio6">            
-              <!-- radiobuttons end -->
-              <!-- slide images start -->
-              <div class="slide first">
-                  <img src="images/1.jpg" alt="">
-              </div>
-              <div class="slide">
-                  <img src="images/2.jpg" alt="">
-              </div>
-              <div class="slide">
-                  <img src="images/3.jpg" alt="">
-              </div>
-              <div class="slide">
-                  <img src="images/4.jpg" alt="">
-              </div>
-              <div class="slide">
-                  <img src="images/5.jpg" alt="">
-              </div>
-              <div class="slide">
-                  <img src="images/6.JPG" alt="">
-              </div>
-              <!-- slide images end -->
-              <!-- automatic navigation start -->
-              <div class="navigation-auto">
-                  <div class="auto-btn1"></div>
-                  <div class="auto-btn2"></div>
-                  <div class="auto-btn3"></div>
-                  <div class="auto-btn4"></div>
-                  <div class="auto-btn5"></div>
-                  <div class="auto-btn6"></div>
-              </div>
-              <!-- automatic navigation end -->
-          </div>
-              <!-- manual navigation start -->
-              <div class="navigation-manual">
-                  <label for="radio1" class="manual-btn" onclick="counterClick(1)"></label>
-                  <label for="radio2" class="manual-btn" onclick="counterClick(2)"></label>
-                  <label for="radio3" class="manual-btn" onclick="counterClick(3)"></label>
-                  <label for="radio4" class="manual-btn" onclick="counterClick(4)"></label>
-                  <label for="radio5" class="manual-btn" onclick="counterClick(5)"></label>
-                  <label for="radio6" class="manual-btn" onclick="counterClick(6)"></label>
-              </div>
-              <!-- manual navigation end -->
+       <!-- Swiper -->
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(images/1.jpg)"> <div class="content">
+          <h2>What is lorem ipsum?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div></div>
+      <div class="swiper-slide" style="background-image:url(images/1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/4.jpg)"></div>
         </div>
-      <br><br>
-      <div class="pdf">       
-        <button onclick="myFunction()">Bühnenbilder (Öffnen/Schließen)</button>
-        <div id="pdf" style="display: none;">
-        <p><iframe src='images/Backdrops.pdf' width="1000px" height="1000px"></iframe></p>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(images/1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/4.jpg)"></div>
         </div>
-      </div>
+  </div>
+  
 
   <div class="d-flex" id="contact">
     <form action="https://formspree.io/f/xoqrjvve" method="post" class="d-flex">
@@ -256,20 +222,46 @@
     }
   }
 
-      var counter = 1;
+    //   var counter = 1;
   
-    function counterClick(radioNum){
-      counter = radioNum;
-    };
+    // function counterClick(radioNum){
+    //   counter = radioNum;
+    // };
   
-      setInterval(function(){
-        document.getElementById('radio'+ counter).checked = true;
-        counter++;
-        if(counter>6){
-            counter=1;
-        }
-    },3000);
+    //   setInterval(function(){
+    //     document.getElementById('radio'+ counter).checked = true;
+    //     counter++;
+    //     if(counter>6){
+    //         counter=1;
+    //     }
+    // },3000);
   </script>
+   <!-- Swiper JS -->
+   <script src="swiper.min.js"></script>
 
+   <!-- Initialize Swiper -->
+   <script>
+     var galleryThumbs = new Swiper('.gallery-thumbs', {
+       spaceBetween: 10,
+       slidesPerView: 4,
+       loop: true,
+       freeMode: true,
+       loopedSlides: 5, //looped slides should be the same
+       watchSlidesVisibility: true,
+       watchSlidesProgress: true,
+     });
+     var galleryTop = new Swiper('.gallery-top', {
+       spaceBetween: 10,
+       loop:true,
+       loopedSlides: 5, //looped slides should be the same
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+       thumbs: {
+         swiper: galleryThumbs,
+       },
+     });
+   </script>
   </body>
 </html>
