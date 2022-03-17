@@ -77,13 +77,22 @@
   <div class="swiper-container gallery-top">
     <div class="swiper-wrapper">
       <div class="swiper-slide" style="background-image:url(images/1.jpg)"> <div class="content">
-          <h2>What is lorem ipsum?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <!-- <h2>What is lorem ipsum?</h2> -->
+          <p>Innerhalb des Schiebereglers können Sie ein Video und Bilder unserer vergangenen Produktionen sowie Bilder einiger unserer wunderschönen Kulissen ansehen. Dies ist nur ein kleiner Ausschnitt aus der Geschichte der Opera Classica, aber es zeigt die Qualität von Gesang, Orchestern und Bühnenbild.  Insgesamt gibt es 13 Folien. Verwenden Sie die Pfeile, drücken Sie auf die Miniaturansichten oder wischen Sie mit Ihrem Finger, wenn Sie einen Touchscreen verwenden.</p>
           </div></div>
-      <div class="swiper-slide" style="background-image:url(images/1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/1.jpg)"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/1bYQoLWHKHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       <div class="swiper-slide" style="background-image:url(images/2.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(images/3.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(images/4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/6.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop1.png)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop2.png)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop3.png)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop4.png)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop5.png)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop6.png)"></div>
+      
         </div>
     <!-- Add Arrows -->
     <div class="swiper-button-next swiper-button-white"></div>
@@ -92,9 +101,18 @@
   <div class="swiper-container gallery-thumbs">
     <div class="swiper-wrapper">
       <div class="swiper-slide" style="background-image:url(images/1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/mobile1small.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(images/2.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(images/3.jpg)"></div>
       <div class="swiper-slide" style="background-image:url(images/4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/6.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop1.png)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop2.png)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop3.png)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop4.png)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop5.png)"></div>
+      <div class="swiper-slide" style="background-image:url(images/backdrop6.png)"></div>
         </div>
   </div>
   
@@ -104,15 +122,15 @@
       <h3>Bitte schreiben Sie uns:</h3>
       <ul>
         <li>
-          <input type="text" id="name" name="user_name" placeholder="Full name:" required maxlength="50">
+          <input type="text" id="name" name="user_name" placeholder="Vollständiger Name:" required maxlength="50">
           <div><hr></div>
         </li>
         <li>           
-          <input type="email" id="mail" name="user_email" placeholder="E-mail address:" required maxlength="50">
+          <input type="email" id="mail" name="user_email" placeholder="E-Mail-Addresse:" required maxlength="50">
           <div><hr></div>
         </li>
         <li>
-          <textarea id="msg" name="user_message" placeholder="Enter text here" required maxlength="1000" rows="10"></textarea>
+          <textarea id="msg" name="user_message" placeholder="Hier Text eingeben" required maxlength="1000" rows="10"></textarea>
         </li>
       </ul>
       <button id="getintouch" type="submit" name="submit" value="Get in touch">Anmelden</button>
@@ -243,7 +261,7 @@
    <script>
      var galleryThumbs = new Swiper('.gallery-thumbs', {
        spaceBetween: 10,
-       slidesPerView: 4,
+       slidesPerView: 6,
        loop: true,
        freeMode: true,
        loopedSlides: 5, //looped slides should be the same
