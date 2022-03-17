@@ -578,10 +578,10 @@ section .box div span:nth-child(3) {
 @media (max-width: 580px) {
   section .box {
     position: absolute;
-    top: calc(50% - 200px);
-    left: calc(50% - 200px);
-    width: 400px;
-    height: 400px;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    width: 250px;
+    height: 250px;
     transform-style: preserve-3d;
   }
   
@@ -627,11 +627,11 @@ section .box div span:nth-child(3) {
   }
   
   section .box div span:nth-child(1) {
-    transform: rotateX(0deg) translate3d(0, 0, 200px);
+    transform: rotateX(0deg) translate3d(0, 0, 125px);
   }
   
   section .box div span:nth-child(2) {
-    transform: rotateY(90deg) translate3d(0, 0, -200px);
+    transform: rotateY(90deg) translate3d(0, 0, -125px);
   }
   
   section .box div span:nth-child(2) video {
@@ -639,6 +639,6 @@ section .box div span:nth-child(3) {
   }
   
   section .box div span:nth-child(3) {
-    transform: rotateX(90deg) translate3d(0, 0, 200px);
+    transform: rotateX(90deg) translate3d(0, 0, 125px);
   }
 }
