@@ -67,7 +67,7 @@ section {
   clip-path: circle(100px at center);
 }
 
-section .box {
+/* section .box {
   position: absolute;
   top: calc(50% - 200px);
   left: calc(50% - 200px);
@@ -131,14 +131,14 @@ section .box div span:nth-child(2) video {
 
 section .box div span:nth-child(3) {
   transform: rotateX(90deg) translate3d(0, 0, 200px);
-}
+} */
 
 .container1 {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 300vh;
+  margin-top: 50px;
   background: #e0e0e0;
   padding: 50px 100px;
   width: 100%;
