@@ -547,7 +547,10 @@ section .box div span:nth-child(3) {
   background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
   transform: scale(1.3);
 }
-
+#data {
+  display: flex;
+  justify-content: center;
+}
 #data a {
   text-decoration: none;
   transition: 0.7s;
